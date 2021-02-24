@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "RocknRoll One", sans-serif;
+  /* background-image: linear-gradient(130deg,#7CB9E8,#7FFFD4); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+}
+
+h1 {
+  color: #fff;
+  opacity: 0.7;
+  position: absolute;
+  top: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  display: none;
+
+}
+
+.bg {
+  background: url("https://images.unsplash.com/photo-1487525219605-eadb39ae229c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1282&q=80")
+    no-repeat center center/cover;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  z-index: -5;
+}
+
+.loading-text {
+  font-size: 4rem;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.search {
+  position: absolute;
+  height: 50px;
+  display: none;
+  right: center;
+  top: center;
+}
+
+.search .input {
+  background-color: #fff;
+  border: 0;
+  font-size: 18px;
+  padding: 15px;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.btn {
+  background-color: #fff;
+  cursor: pointer;
+  border: 0;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 24px;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+.btn:focus,
+.input:focus {
+  outline: none;
+}
+
+.search.active .input {
+  width: 250px;
+}
+
+.search.active .btn {
+  transform: translateX(198px);
+}
+
+footer{
+  width: 100vw;
+  color: #fff; 
+  display: none; 
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  font-size: 10px;
+  
+}
+
+footer ul i{
+  margin: 0 5px;
+  cursor: pointer;
+  color: #fff;
+}

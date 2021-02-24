@@ -1,0 +1,8 @@
+@media (max-width: 600px) {
+  footer {
+    display: none;
+    font-size: 8px;
+    width: 115%;
+    bottom: -1.8rem;
+  }
+}
